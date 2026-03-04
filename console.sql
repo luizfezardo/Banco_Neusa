@@ -1,7 +1,14 @@
+
+drop database if exists salao_neusa;
+
+create database salao_neusa;
+
+
+use salao_neusa;
 create table cliente
 (
     id_cliente int auto_increment primary key,
-    nome varchar(30) not null,
+    nome varchar(50) not null,
     email varchar(100),
     telefone varchar(20),
     data timestamp not null
@@ -77,7 +84,8 @@ INSERT INTO cidade (nome, cod_tom, id_estado, data) VALUES
 INSERT INTO cliente (nome, email, telefone, data) VALUES
 ('João Silva', 'joao@email.com', '4999991111', NOW()),
 ('Maria Souza', 'maria@email.com', '4999992222', NOW()),
-('Carlos Pereira', 'carlos@email.com', '4999993333', NOW());
+('Carlos Pereira', 'carlos@email.com', '4999993333', NOW()),
+('Daniel Wellinton Bortolini Bortolossi', 'danielwll@gmail.com', '4935338800', NOW());
 
 INSERT INTO funcionario (nome, email, telefone, id_cidade, data) VALUES
 ('Ana Costa', 'ana@salon.com', '4998881111', 1, NOW()),
@@ -95,3 +103,4 @@ INSERT INTO agendamento (id_cliente, id_func, id_produto, data_servico, data) VA
 (3, 1, 3, '2026-03-11 10:00:00', NOW());
 
 
+select *
