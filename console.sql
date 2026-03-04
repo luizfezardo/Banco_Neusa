@@ -38,6 +38,33 @@ create table funcionario
 
 );
 
+create table produto
+(
+    id_produto int auto_increment primary key,
+    produto_nome varchar(100) not null ,
+    valor decimal not null,
+    descricao text,
+    quantidade int not null,
+    tipo ENUM('produto', 'servico') not null,
+    data timestamp not null
+);
+
+
+create table agendamento
+(
+    id_agendamento int auto_increment primary key,
+    id_cliente int not null ,
+    id_func int not null ,
+    id_produto int not null,
+    data_servico datetime not null,
+    data timestamp not null,
+
+    foreign key(id_cliente) references cliente(id_cliente),
+    foreign key(id_func) references  funcionario(id_func),
+    foreign key(id_produto) references  produto(id_produto)
+)
+
+
 
 
 
