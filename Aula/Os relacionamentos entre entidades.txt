@@ -1,0 +1,19 @@
+Os relacionamentos entre entidades representam as associações e interações entre diferentes entidades no banco de dados.
+Esses relacionamentos são estabelecidos para refletir as conexões lógicas entre as entidades do mundo real.
+No exemplo anterior de um banco de dados de uma empresa, pode haver um relacionamento entre as entidades “Funcionário” e “Departamento”, indicando quais funcionários e funcionárias são associados em quais departamentos e suas respectivas funções.
+E para construir esses relacionamentos, são utilizadas chaves primárias e chaves estrangeiras das tabelas em questão.
+As chaves primárias são atributos que identificam exclusivamente cada registro em uma tabela.
+Elas garantem que cada linha na tabela tenha uma identificação única. Uma chave primária é essencial para manter a integridade dos dados e permitir a referência precisa a um registro específico.
+Por exemplo, em uma tabela de “Funcionários”, o número de identificação do funcionário ou funcionária pode ser definido como a chave primária, que é único para cada pessoa (registro, matrícula).
+As chaves estrangeiras são atributos que estabelecem relacionamentos entre tabelas.
+Elas são baseadas em chaves primárias de outras tabelas e permitem conectar informações relacionadas entre diferentes entidades.
+Por exemplo, no contexto de vendas, podemos avaliar uma tabela de “Pedidos”, e a chave estrangeira pode ser usada para referenciar uma tabela de “Clientes”, vinculando cada pedido a um cliente específico.
+
+
+MODELAGEM DE DADOS
+
+Crucialmente importante dentro da modelagem, criação e administração do BD. os cuidados nesta etapa minimizam problemas futuros, tais como redundância de dados e baixa velocidade do sistema.
+
+Técnicas de modelagem são usadas para registrar os dados nos mais diferentes níveis. O objetivo é dar fidelidade á representação das coisas do mundo. Os dados podem demonstrar elasticidade e assumir várias formas, dependendo do contexto em que estão inseridos. Modelo de dados é a representação gráfica e textual das estruturas, operadores e regras que diferem os dados para representar a realidade.
+
+O princípio básico é o mesmo da teoria dos conjuntos. Onde cada entidade deve ser como um conjunto que pode ou não ter um relacionamento (associação) com outro conjunto.
